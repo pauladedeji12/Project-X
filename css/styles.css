@@ -1,68 +1,264 @@
- </style>
-</head>
-<body>
- 
-    <!-- NAV -->
-    <nav class="nav-bar">
-        <div class="icon">Fi<span>gu</span></div>
-        <div class="nav-link-bar">
-            <a class="navlink" href="index.html">Home</a>
-            <a class="navlink" href="">About</a>
-            <a class="navlink" href="">Blog</a>
-        </div>
-    </nav>
- 
-    <!-- HERO -->
-    <section class="firstcontainer">
-        <div class="text1">
-            <p class="eyebrow">Available for freelance</p>
-            <h1>Adedeji Paul,<br><em>Illustrator</em> &amp;<br>Graphic Designer.</h1>
-            <p class="sub">Crafting visual stories through illustration and thoughtful design — blending creativity with purpose.</p>
-            <a href="" class="btn-primary">Get in touch</a>
-        </div>
-        <div class="profile">
-            <div class="img-wrap">
-                <img class="img" src="images/gig_and_profile_to_use-removebg-preview-modified.png" alt="Adedeji Paul profile photo">
-            </div>
-        </div>
-    </section>
- 
-    <div class="divider"></div>
- 
-    <!-- ABOUT -->
-    <section class="second-container">
-        <div class="img1">
-            <img src="images/profile-modified.png" alt="About Adedeji">
-        </div>
-        <div class="text2">
-            <p class="section-label">About Me</p>
-            <h2>A creative mind rooted in Ife, Osun State.</h2>
-            <p>I am a student at Obafemi Awolowo University, Ife — a freelancer with skills spanning illustration, graphic design, and web development. I'm passionate about building things that look great and work beautifully, with an eye toward network marketing and digital branding.</p>
-        </div>
-    </section>
- 
-    <!-- SKILLS -->
-    <section class="third-container">
-        <div class="third-inner">
-            <div class="text3">
-                <p class="section-label">My Skills</p>
-                <h2>Building the web, one line at a time.</h2>
-                <p>Currently deepening my web development foundation — working through HTML, CSS, and moving into JavaScript. I love the intersection of art and code.</p>
-                <div class="skill-tags">
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">CSS</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Illustration</span>
-                    <span class="skill-tag">Graphic Design</span>
-                    <span class="skill-tag">Freelance</span>
-                </div>
-            </div>
-            <div class="img2-wrap">
-                <img class="img2" src="images/game-modified.png" alt="Skills illustration">
-            </div>
-        </div>
-    </section>
-<footer class="footer">
-        <div class="footer-brand">Fi<span>gu</span></div>
-        <p class="foot">© Fugi 2023 — All rights reserved</p>
-    </footer>
+/* ===========================
+   RESET & BASE
+=========================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee9da;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #2c2c2c;
+    text-align: center;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #BDCDD6;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-text {
+    font-size: 1.4rem;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #eee9da;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: #2c2c2c;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: goldenrod;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem 6rem;
+    min-height: 85vh;
+    text-align: left;
+}
+
+.hero-greeting {
+    font-size: 1.2rem;
+    color: #BDCDD6;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+}
+
+.hero-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #2c2c2c;
+    margin-bottom: 2rem;
+}
+
+.hero-title .highlight {
+    color: goldenrod;
+}
+
+.hero-image img {
+    width: 380px;
+    max-width: 100%;
+    display: block;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #fff;
+    color: goldenrod;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.4s, color 0.4s;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: goldenrod;
+    color: #fff;
+}
+
+/* ===========================
+   ABOUT SECTION
+=========================== */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 6rem;
+    background-color: #d9d3c3;
+    text-align: left;
+}
+
+.about-image img {
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+/* ===========================
+   SKILLS SECTION
+=========================== */
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 6rem;
+    text-align: left;
+}
+
+.skills-text {
+    max-width: 500px;
+}
+
+.skills-image img {
+    width: 320px;
+    max-width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.skill-item {
+    background-color: #BDCDD6;
+    color: #2c2c2c;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* ===========================
+   SHARED SECTION TEXT
+=========================== */
+.section-label {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #BDCDD6;
+    margin-bottom: 0.5rem;
+}
+
+.section-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+}
+
+.section-body {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #4a4a4a;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+.footer {
+    background-color: #BDCDD6;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer-text {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        gap: 1.2rem;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        padding: 3rem 1.5rem;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .hero-image img {
+        width: 260px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+        text-align: center;
+    }
+
+    .skills {
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+        text-align: center;
+    }
+
+    .skills-list {
+        justify-content: center;
+    }
+}
