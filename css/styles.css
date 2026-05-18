@@ -1,123 +1,68 @@
-body{
-    margin:0;
-text-align: center;
-background-color: #eee9da;
-}
-button{
-    color: goldenrod;
-    border: goldenrod ;
-    padding: 10px;
-    background: #fff;
-    font-size: large;
-    border-radius: 10px;
-}
-button:hover{
-    background-color: goldenrod;
-    color: #fff;
-    transition: 0.5s;
-}
-.img{
-    width: 100%;
-}
-
-home{
-    padding: 10px;
-    position: fixed;
-}
-
-.profile{
-text-align: right;
-}
-.p1{
-    padding: 7rem;
-}
-.footer{
-    height: 50px;
-    width: 100%;
-    background-color:#BDCDD6 ;
- padding: 1rem;
-}
-.foot{
-font-size: 1.3rem;
-font-weight: 900;
-color:#fff ;
-}
-.firstcontainer{
-    display: flex;
-    justify-content: left;
-    padding: 4rem;
-    width: 50%;
-    margin: auto;
-}
-.nav-bar{
-    display: flex;
-    justify-content:space-around;
-    text-align: center;
-padding: 1rem;
-background-color: #BDCDD6;
-}
-.nav-link-bar{
-    margin-right: 10rem;
-    display: inline-block;
-    
-}
-.navlink{
-    font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-right: 3rem;
-    text-decoration: none;
-}
-.navlink:hover{
-color: goldenrod;
-}
-.home{
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: none;
-    
-}
-.home:hover{
- transition: cubic-bezier(0.075, 0.82, 0.165, 1);
- color: white;
- background-color: rgb(25, 23, 23);
- border-radius: 30%;
-}
-.icon{
-  font-size:20px ;
-  font-weight:900;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  color:#EEE9DA;
-}
-.img1{
-    background-color: rgb(238, 233, 218);
-}
-.second-container{
-display: flex;
-justify-content: space-around;
-align-items: center;
-margin: 8.625rem 8.63rem;
-}
-.third-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 8.625rem 8.63rem;
-}
-.text1{
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-weight: 600;
-width: 40%;
-height: 150px;
-}
-.text2{
-    background-color: #eee9da;
-    text-align: left;
-    padding-left: 0.5rem;
-    padding-bottom:10rem;
-}
-.text3{
-    width: 50%;
-    text-align: right;
-    padding-left: 0.5rem;
-    padding-bottom:11rem;
-}
+ </style>
+</head>
+<body>
+ 
+    <!-- NAV -->
+    <nav class="nav-bar">
+        <div class="icon">Fi<span>gu</span></div>
+        <div class="nav-link-bar">
+            <a class="navlink" href="index.html">Home</a>
+            <a class="navlink" href="">About</a>
+            <a class="navlink" href="">Blog</a>
+        </div>
+    </nav>
+ 
+    <!-- HERO -->
+    <section class="firstcontainer">
+        <div class="text1">
+            <p class="eyebrow">Available for freelance</p>
+            <h1>Adedeji Paul,<br><em>Illustrator</em> &amp;<br>Graphic Designer.</h1>
+            <p class="sub">Crafting visual stories through illustration and thoughtful design — blending creativity with purpose.</p>
+            <a href="" class="btn-primary">Get in touch</a>
+        </div>
+        <div class="profile">
+            <div class="img-wrap">
+                <img class="img" src="images/gig_and_profile_to_use-removebg-preview-modified.png" alt="Adedeji Paul profile photo">
+            </div>
+        </div>
+    </section>
+ 
+    <div class="divider"></div>
+ 
+    <!-- ABOUT -->
+    <section class="second-container">
+        <div class="img1">
+            <img src="images/profile-modified.png" alt="About Adedeji">
+        </div>
+        <div class="text2">
+            <p class="section-label">About Me</p>
+            <h2>A creative mind rooted in Ife, Osun State.</h2>
+            <p>I am a student at Obafemi Awolowo University, Ife — a freelancer with skills spanning illustration, graphic design, and web development. I'm passionate about building things that look great and work beautifully, with an eye toward network marketing and digital branding.</p>
+        </div>
+    </section>
+ 
+    <!-- SKILLS -->
+    <section class="third-container">
+        <div class="third-inner">
+            <div class="text3">
+                <p class="section-label">My Skills</p>
+                <h2>Building the web, one line at a time.</h2>
+                <p>Currently deepening my web development foundation — working through HTML, CSS, and moving into JavaScript. I love the intersection of art and code.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Illustration</span>
+                    <span class="skill-tag">Graphic Design</span>
+                    <span class="skill-tag">Freelance</span>
+                </div>
+            </div>
+            <div class="img2-wrap">
+                <img class="img2" src="images/game-modified.png" alt="Skills illustration">
+            </div>
+        </div>
+    </section>
+<footer class="footer">
+        <div class="footer-brand">Fi<span>gu</span></div>
+        <p class="foot">© Fugi 2023 — All rights reserved</p>
+    </footer>
